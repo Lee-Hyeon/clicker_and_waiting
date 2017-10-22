@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="Heat_max" />
-    <integer name="Heat_prog" />
+    <integer name="Heat_max">10</integer>
+    <integer name="Heat_prog">0</integer>
 </resources>
