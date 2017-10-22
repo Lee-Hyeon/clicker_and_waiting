@@ -34,7 +34,9 @@
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
                     android:textColor="#FFFFFF"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:clickable="false"
+                    tools:ignore="RtlCompat" />
             </LinearLayout>
 
             <!-- Heat 생산 -->
@@ -52,6 +54,61 @@
                     android:orientation="horizontal"
                     android:layout_margin="0.1pt"
                     android:background="#E5E5E5">
+                    
+                    <Button
+                        android:id="@+id/bt_Heat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="#ffffff"
+                        android:text="@string/Heat"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="4pt"
+                        android:layout_marginRight="4pt"
+                        android:layout_marginTop="2pt"
+                        android:layout_marginBottom="2pt"
+                        android:textSize="6pt"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="4">
+
+                        <ProgressBar
+                            android:id="@+id/pb_HeatCapacity"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:indeterminate="false"
+                            android:max="@integer/Heat_max"
+                            android:progress="@integer/Heat_prog"
+                            android:visibility="visible"
+                            tools:visibility="visible" />
+
+                        <ProgressBar
+                            android:id="@+id/pb_HeatProduction"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bt_HeatAuto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2pt"
+                        android:layout_marginLeft="4pt"
+                        android:layout_marginRight="4pt"
+                        android:layout_marginTop="2pt"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:text="@string/Enable_automation"
+                        android:textSize="5pt" />
+
                 </LinearLayout>
             </LinearLayout>
 
