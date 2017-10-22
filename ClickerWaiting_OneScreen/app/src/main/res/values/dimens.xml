@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="SlotBackgroundWidth">360dp</dimen>
+    <dimen name="SlotBackgroundHeight">40dp</dimen>
+    <dimen name="SlotBackgroundBelowHeight">10dp</dimen>
+    <dimen name="PlusButtonWidth">30dp</dimen>
+    <dimen name="PlusButtonHeight">30dp</dimen>
+    <dimen name="MinusButtonWidth">30dp</dimen>
+    <dimen name="MinusButtonHeight">30dp</dimen>
+</resources>
