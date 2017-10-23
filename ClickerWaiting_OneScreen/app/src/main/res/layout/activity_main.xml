@@ -67,7 +67,8 @@
                         android:layout_marginRight="4pt"
                         android:layout_marginTop="2pt"
                         android:layout_marginBottom="2pt"
-                        android:textSize="6pt"/>
+                        android:textSize="6pt"
+                        android:onClick="heatClick"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
