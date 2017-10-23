@@ -1,6 +1,7 @@
 package com.example.lsh.clickerwaiting_onescreen;
 
 import android.os.Build;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
@@ -12,14 +13,13 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ProgressBar pb_HeatCapacity;
-    private ProgressBar pb_HeatProduction;
-    private Button bt_Heat;
-    private int capacityProgress = 0;
-    private int capacityMax = 10;
-    private int productionProgress = 0;
-    private int productionMax = 10;
-
+    ProgressBar pb_HeatCapacity;
+    ProgressBar pb_HeatProduction;
+    Button bt_Heat;
+    int capacityProgress = 0;
+    int capacityMax = 10;
+    int productionMax = 100;
+    long productionTime =5000;
 
 
     @Override
@@ -32,16 +32,26 @@ public class MainActivity extends AppCompatActivity {
         pb_HeatCapacity = (ProgressBar) findViewById(R.id.pb_HeatCapacity);
         pb_HeatProduction = (ProgressBar) findViewById(R.id.pb_HeatProduction);
         pb_HeatCapacity.setMax(capacityMax);
-        pb_HeatCapacity.setProgress(capacityProgress);
         pb_HeatProduction.setMax(productionMax);
-        pb_HeatProduction.setProgress(productionProgress);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void heatClick(View v) {
+        new CountDownTimer(productionTime, 10) {
+            int productionProgress = 0;
 
-        if(capacityProgress < capacityMax)
-            capacityProgress++;
-        pb_HeatCapacity.setProgress(capacityProgress, true);
+            public void onTick(long millisUntilFinished) {
+                productionProgress = (int) ((productionTime - millisUntilFinished) * 100 / productionTime);
+                pb_HeatProduction.setProgress(productionProgress);
+            }
+
+            public void onFinish() {
+                productionProgress = 0;
+                pb_HeatProduction.setProgress(productionProgress);
+                if(capacityProgress < capacityMax)
+                    capacityProgress++;
+                pb_HeatCapacity.setProgress(capacityProgress, true);
+            }
+        }.start();
     }
 }

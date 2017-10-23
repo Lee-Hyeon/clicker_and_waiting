@@ -2,4 +2,6 @@
 <resources>
     <integer name="Heat_max">10</integer>
     <integer name="Heat_prog">0</integer>
+    <integer name="Prod_max">100</integer>
+    <integer name="Prod_prog">0</integer>
 </resources>
