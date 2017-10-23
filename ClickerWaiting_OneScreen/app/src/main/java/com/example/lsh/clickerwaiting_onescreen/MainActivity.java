@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void heatClick(View v) {
+
         if(capacityProgress < capacityMax)
             capacityProgress++;
         pb_HeatCapacity.setProgress(capacityProgress, true);
