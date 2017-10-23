@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="upgrade_able">#FFFFFF</color>
+    <color name="upgrade_unable">#000000</color>
+    <color name="produce_able">#61ff61</color>
+    <color name="produce_unable">#ff6161</color>
+    <color name="produce_waiting">#000000</color>
+    <color name="frame">#404040</color>
 </resources>
