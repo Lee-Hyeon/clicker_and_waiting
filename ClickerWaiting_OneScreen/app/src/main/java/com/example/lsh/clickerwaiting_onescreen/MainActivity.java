@@ -33,10 +33,12 @@ public class MainActivity extends AppCompatActivity {
         pb_HeatProduction = (ProgressBar) findViewById(R.id.pb_HeatProduction);
         pb_HeatCapacity.setMax(capacityMax);
         pb_HeatProduction.setMax(productionMax);
+        bt_Heat = (Button) findViewById(R.id.bt_Heat);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void heatClick(View v) {
+        bt_Heat.setEnabled(false);
         new CountDownTimer(productionTime, 10) {
             int productionProgress = 0;
 
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 if(capacityProgress < capacityMax)
                     capacityProgress++;
                 pb_HeatCapacity.setProgress(capacityProgress, true);
+                bt_Heat.setEnabled(true);
             }
         }.start();
     }
