@@ -5,6 +5,23 @@
     <string name="Enable_automation">automation</string>
     <string name="OpenupgradeTap">▼</string>
     <string name="CloseupgradeTap">▲ DERAILS ▲</string>
-    <string name="tv_ItemCap">Item Cap</string>
-    <string name="tv_ItemCapValue">10</string>
+
+    <string name="detailChSize">7sp</string>
+    <string name="detailNumberSize">7sp</string>
+
+    <string name="tv_ChItemCap">Item Cap</string>
+    <string name="tv_ChProductionTime">Production Time</string>
+    <string name="tv_ChProductionVolume">Production Volume</string>
+    <string name="tv_ChWorkerCapacity">Worker Cap</string>
+    <string name="tv_ChAutomationRate">Automation Rate</string>
+    <string name="tv_ChWorkerEfficiency">Worker Efficiency</string>
+
+    <!-- Heat -->
+    <string name="tv_ItemCap">10</string>
+    <string name="tv_ProductionTime">10s</string>
+    <string name="tv_ProductionVolume"></string>
+    <string name="tv_WorkerCapacity"></string>
+    <string name="tv_AutomationRate"></string>
+    <string name="tv_WorkerEfficiency"></string>
+
 </resources>
