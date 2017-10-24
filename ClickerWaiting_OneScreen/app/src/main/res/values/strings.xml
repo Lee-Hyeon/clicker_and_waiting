@@ -19,7 +19,7 @@
     <!-- Heat -->
     <string name="tv_ItemCap">10</string>
     <string name="tv_ProductionTime">10s</string>
-    <string name="tv_ProductionVolume"></string>
+    <string name="tv_ProductionVolume">1</string>
     <string name="tv_WorkerCapacity"></string>
     <string name="tv_AutomationRate"></string>
     <string name="tv_WorkerEfficiency"></string>

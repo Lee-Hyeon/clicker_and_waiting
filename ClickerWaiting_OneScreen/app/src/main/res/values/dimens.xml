@@ -7,4 +7,6 @@
     <dimen name="PlusButtonHeight">30dp</dimen>
     <dimen name="MinusButtonWidth">30dp</dimen>
     <dimen name="MinusButtonHeight">30dp</dimen>
+    <dimen name="detailChSize">7sp</dimen>
+    <dimen name="detailNumberSize">7sp</dimen>
 </resources>
