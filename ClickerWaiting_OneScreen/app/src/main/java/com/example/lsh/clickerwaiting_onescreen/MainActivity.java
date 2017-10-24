@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
-    public void heatClick(View v) {
+    public void HeatClick(View v) {
         bt_Heat.setEnabled(false);
         new CountDownTimer(productionTime, 10) {
             int productionProgress = 0;

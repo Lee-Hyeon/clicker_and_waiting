@@ -2,6 +2,7 @@
     <string name="app_name">ClickerWaiting_OneScreen</string>
     <string name="TheMachine">\ \ The Machine</string>
     <string name="Heat">Heat</string>
+    <string name="Tanks">Tanks</string>
     <string name="Enable_automation">automation</string>
     <string name="OpenupgradeTap">▼</string>
     <string name="CloseupgradeTap">▲ DERAILS ▲</string>
