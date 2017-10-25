@@ -51,8 +51,18 @@ public class MainActivity extends AppCompatActivity {
         item.bt_Item = bt;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
+    public void itemClick(View v) {
+        switch(v.getId()) {
+            case R.id.bt_Heat :
+                Heat.itemClick(v);
+                break;
+            case R.id.bt_Tanks :
+                Tank.itemClick(v);
+                break;
+            }
 
-
+    }
 
 }
 

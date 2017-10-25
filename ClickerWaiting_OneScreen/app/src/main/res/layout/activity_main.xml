@@ -65,7 +65,7 @@
                         android:layout_marginTop="2pt"
                         android:layout_weight="0"
                         android:background="#ffffff"
-                        android:onClick="Heat.itemClick"
+                        android:onClick="itemClick"
                         android:text="@string/Heat"
                         android:textAllCaps="false"
                         android:textSize="6pt" />
@@ -531,7 +531,7 @@
                         android:layout_marginTop="2pt"
                         android:layout_weight="0"
                         android:background="#ffffff"
-                        android:onClick="Tank.itemClick"
+                        android:onClick="itemClick"
                         android:text="@string/Tanks"
                         android:textAllCaps="false"
                         android:textSize="6pt" />
