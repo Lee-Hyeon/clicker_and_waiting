@@ -3,6 +3,7 @@
     <string name="TheMachine">\ \ The Machine</string>
     <string name="Heat">Heat</string>
     <string name="Tanks">Tanks</string>
+    <string name="JobSpeed">Job Speed</string>
     <string name="Enable_automation">automation</string>
     <string name="OpenupgradeTap">▼</string>
     <string name="CloseupgradeTap">▲ DERAILS ▲</string>
@@ -16,13 +17,42 @@
     <string name="tv_ChWorkerCapacity">Worker Cap</string>
     <string name="tv_ChAutomationRate">Automation Rate</string>
     <string name="tv_ChWorkerEfficiency">Worker Efficiency</string>
+    <string name="tv_ChCost">Cost:</string>
+    <string name="tv_ChLevel">Level:</string>
+    <string name="tv_ChNext">Next:</string>
 
     <!-- Heat -->
-    <string name="tv_ItemCap">10</string>
-    <string name="tv_ProductionTime">10s</string>
-    <string name="tv_ProductionVolume">1</string>
-    <string name="tv_WorkerCapacity"></string>
-    <string name="tv_AutomationRate"></string>
-    <string name="tv_WorkerEfficiency"></string>
+    <string name="tv_HeatItemCap">10</string>
+    <string name="tv_HeatProductionTime">10s</string>
+    <string name="tv_HeatProductionVolume">1</string>
+    <string name="tv_HeatWorkerCapacity"></string>
+    <string name="tv_HeatAutomationRate"></string>
+    <string name="tv_HeatWorkerEfficiency"></string>
+    <string name="tv_HeatSpeedCost">1x Heat</string>
+    <string name="tv_HeatSpeedLevel">1</string>
+    <string name="tv_HeatSpeedNext">9s 0.11/s</string>
+    <string name="tv_HeatCapacityCost">1x Tanks</string>
+    <string name="tv_HeatCapacityLevel">1</string>
+    <string name="tv_HeatCapacityNext">9s  0.11/s</string>
+    <string name="tv_HeatWorkerCapacityCost">1x Kilns</string>
+    <string name="tv_HeatWorkerCapacityLevel">1</string>
+    <string name="tv_HeatWorkerCapacityNext">9s  0.11/s</string>
+
+    <!-- Tanks -->
+    <string name="tv_TanksItemCap">10</string>
+    <string name="tv_TanksProductionTime">10s</string>
+    <string name="tv_TanksProductionVolume">1</string>
+    <string name="tv_TanksWorkerCapacity"></string>
+    <string name="tv_TanksAutomationRate"></string>
+    <string name="tv_TanksWorkerEfficiency"></string>
+    <string name="tv_TanksSpeedCost">1x Heat</string>
+    <string name="tv_TanksSpeedLevel">1</string>
+    <string name="tv_TanksSpeedNext">9s 0.11/s</string>
+    <string name="tv_TanksCapacityCost">1x Tanks</string>
+    <string name="tv_TanksCapacityLevel">1</string>
+    <string name="tv_TanksCapacityNext">9s  0.11/s</string>
+    <string name="tv_TanksWorkerCapacityCost">1x Kilns</string>
+    <string name="tv_TanksWorkerCapacityLevel">1</string>
+    <string name="tv_TanksWorkerCapacityNext">9s  0.11/s</string>
 
 </resources>

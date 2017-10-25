@@ -310,7 +310,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_ItemCap"
+                                        android:text="@string/tv_HeatItemCap"
                                         android:textSize="@dimen/detailNumberSize"/>
 
                                 </LinearLayout>
@@ -344,7 +344,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_ProductionTime"
+                                        android:text="@string/tv_HeatProductionTime"
                                         android:textSize="@dimen/detailNumberSize"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -375,7 +375,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_ProductionVolume"
+                                        android:text="@string/tv_HeatProductionVolume"
                                         android:textSize="@dimen/detailNumberSize"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -424,7 +424,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_WorkerCapacity"
+                                        android:text="@string/tv_HeatWorkerCapacity"
                                         android:textSize="@dimen/detailNumberSize"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -455,7 +455,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_AutomationRate"
+                                        android:text="@string/tv_HeatAutomationRate"
                                         android:textSize="@dimen/detailNumberSize"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -486,7 +486,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_WorkerEfficiency"
+                                        android:text="@string/tv_HeatWorkerEfficiency"
                                         android:textSize="@dimen/detailNumberSize"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -502,6 +502,391 @@
                         android:layout_marginTop="3pt"
                         android:layout_marginBottom="3pt">
                     </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Heat upgrade bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30pt"
+                android:orientation="horizontal"
+                android:layout_marginLeft="4pt"
+                android:layout_marginRight="4pt"
+                android:background="@color/frame">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="0.1pt"
+                    android:background="#303030">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="2pt"
+                        android:layout_marginBottom="2pt"
+                        android:layout_marginLeft="4pt"
+                        android:layout_marginRight="4pt">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_ChCost"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_HeatSpeedCost"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="100">
+                            <Button
+                                android:id="@+id/bt_HeatSpeed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#ffffff"
+                                android:onClick="itemClick"
+                                android:text="@string/JobSpeed"
+                                android:textAllCaps="false"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_ChLevel"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_HeatSpeedLevel"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_ChNext"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_HeatSpeedNext"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="2pt"
+                        android:layout_marginBottom="2pt"
+                        android:layout_marginLeft="4pt"
+                        android:layout_marginRight="4pt">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_ChCost"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_HeatSpeedCost"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="100">
+                            <Button
+                                android:id="@+id/bt_HeatCapacity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#ffffff"
+                                android:onClick="itemClick"
+                                android:text="@string/JobSpeed"
+                                android:textAllCaps="false"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_ChLevel"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_HeatCapacityLevel"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_ChNext"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_HeatCapacityNext"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="2pt"
+                        android:layout_marginBottom="2pt"
+                        android:layout_marginLeft="4pt"
+                        android:layout_marginRight="4pt">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_ChCost"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_HeatWorkerCapacityCost"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="100">
+                            <Button
+                                android:id="@+id/bt_HeatWorkercapacity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#ffffff"
+                                android:onClick="itemClick"
+                                android:text="@string/JobSpeed"
+                                android:textAllCaps="false"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_ChLevel"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_HeatWorkerCapacityLevel"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_ChNext"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/tv_HeatWorkerCapacityNext"
+                                    android:textColor="#ffffff"
+                                    android:textSize="7sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
                 </LinearLayout>
             </LinearLayout>
 
@@ -779,7 +1164,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_ItemCap"
+                                        android:text="@string/tv_TanksItemCap"
                                         android:textSize="@dimen/detailNumberSize"/>
 
                                 </LinearLayout>
@@ -813,7 +1198,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_ProductionTime"
+                                        android:text="@string/tv_TanksProductionTime"
                                         android:textSize="@dimen/detailNumberSize"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -844,7 +1229,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_ProductionVolume"
+                                        android:text="@string/tv_TanksProductionVolume"
                                         android:textSize="@dimen/detailNumberSize"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -893,7 +1278,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_WorkerCapacity"
+                                        android:text="@string/tv_TanksWorkerCapacity"
                                         android:textSize="@dimen/detailNumberSize"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -924,7 +1309,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_AutomationRate"
+                                        android:text="@string/tv_TanksAutomationRate"
                                         android:textSize="@dimen/detailNumberSize"/>
                                 </LinearLayout>
                             </LinearLayout>
@@ -955,7 +1340,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/tv_WorkerEfficiency"
+                                        android:text="@string/tv_TanksWorkerEfficiency"
                                         android:textSize="@dimen/detailNumberSize"/>
                                 </LinearLayout>
                             </LinearLayout>
