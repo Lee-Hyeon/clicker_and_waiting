@@ -508,7 +508,7 @@
             <!-- Heat upgrade bar -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30pt"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginLeft="4pt"
                 android:layout_marginRight="4pt"
@@ -562,19 +562,27 @@
                             </LinearLayout>
                         </LinearLayout>
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="100">
-                            <Button
-                                android:id="@+id/bt_HeatSpeed"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="#ffffff"
-                                android:onClick="itemClick"
-                                android:text="@string/JobSpeed"
-                                android:textAllCaps="false"
-                                android:textSize="8sp" />
+                            android:layout_weight="100"
+                            android:layout_marginBottom="1pt"
+                            android:layout_marginTop="1pt"
+                            android:background="@color/frame">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="10pt"
+                                android:layout_margin="0.11pt">
+                                <Button
+                                    android:id="@+id/bt_HeatSpeed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="itemClick"
+                                    android:background="#ffffff"
+                                    android:text="@string/JobSpeed"
+                                    android:textAllCaps="false"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -684,19 +692,27 @@
                             </LinearLayout>
                         </LinearLayout>
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="100">
-                            <Button
-                                android:id="@+id/bt_HeatCapacity"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="#ffffff"
-                                android:onClick="itemClick"
-                                android:text="@string/ItemCapacity"
-                                android:textAllCaps="false"
-                                android:textSize="8sp" />
+                            android:layout_weight="100"
+                            android:layout_marginBottom="1pt"
+                            android:layout_marginTop="1pt"
+                            android:background="@color/frame">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="10pt"
+                                android:layout_margin="0.11pt">
+                                <Button
+                                    android:id="@+id/bt_HeatSpeed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="itemClick"
+                                    android:background="#ffffff"
+                                    android:text="@string/ItemCapacity"
+                                    android:textAllCaps="false"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -806,19 +822,27 @@
                             </LinearLayout>
                         </LinearLayout>
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="100">
-                            <Button
-                                android:id="@+id/bt_HeatWorkercapacity"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="#ffffff"
-                                android:onClick="itemClick"
-                                android:text="@string/WorkerCapacity"
-                                android:textAllCaps="false"
-                                android:textSize="8sp" />
+                            android:layout_weight="100"
+                            android:layout_marginBottom="1pt"
+                            android:layout_marginTop="1pt"
+                            android:background="@color/frame">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="10pt"
+                                android:layout_margin="0.11pt">
+                                <Button
+                                    android:id="@+id/bt_HeatSpeed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:onClick="itemClick"
+                                    android:background="#ffffff"
+                                    android:text="@string/WorkerCapacity"
+                                    android:textAllCaps="false"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
