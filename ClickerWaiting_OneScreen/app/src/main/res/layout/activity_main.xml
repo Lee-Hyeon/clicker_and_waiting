@@ -678,7 +678,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/tv_HeatSpeedCost"
+                                    android:text="@string/tv_HeatCapacityCost"
                                     android:textColor="#ffffff"
                                     android:textSize="7sp"/>
                             </LinearLayout>
@@ -694,7 +694,7 @@
                                 android:layout_weight="1"
                                 android:background="#ffffff"
                                 android:onClick="itemClick"
-                                android:text="@string/JobSpeed"
+                                android:text="@string/ItemCapacity"
                                 android:textAllCaps="false"
                                 android:textSize="8sp" />
                         </LinearLayout>
@@ -816,7 +816,7 @@
                                 android:layout_weight="1"
                                 android:background="#ffffff"
                                 android:onClick="itemClick"
-                                android:text="@string/JobSpeed"
+                                android:text="@string/WorkerCapacity"
                                 android:textAllCaps="false"
                                 android:textSize="8sp" />
                         </LinearLayout>

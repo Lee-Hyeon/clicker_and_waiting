@@ -4,6 +4,8 @@
     <string name="Heat">Heat</string>
     <string name="Tanks">Tanks</string>
     <string name="JobSpeed">Job Speed</string>
+    <string name="ItemCapacity">Item Capacity</string>
+    <string name="WorkerCapacity">WorkerCapacity</string>
     <string name="Enable_automation">automation</string>
     <string name="OpenupgradeTap">▼</string>
     <string name="CloseupgradeTap">▲ DERAILS ▲</string>
